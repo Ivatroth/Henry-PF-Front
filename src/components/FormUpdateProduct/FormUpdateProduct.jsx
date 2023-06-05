@@ -79,7 +79,7 @@ export default function FormUpdateProduct({ value }) {
   const handleUpdateProduct = async () => {
     try {
       const response = await axios.put(
-        `/product/${value.col0}`,
+        `https://proyecto-final-back-production-d376.up.railway.app//product/${value.col0}`,
         form
       );
     } catch (error) {

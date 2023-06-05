@@ -26,12 +26,12 @@ function Dashboard() {
   useEffect(() => {
     const axiosData = async () => {
       const response = await axios.get(
-        "/admin/percentage"
+        "https://proyecto-final-back-production-d376.up.railway.app//admin/percentage"
       );
       const response2 = await axios.get(
-        "/admin/deliveredProducts"
+        "https://proyecto-final-back-production-d376.up.railway.app//admin/deliveredProducts"
       );
-      const response3 = await axios.get("/admin/sales");
+      const response3 = await axios.get("https://proyecto-final-back-production-d376.up.railway.app//admin/sales");
       const data3 = response3.data;
       const data2 = response2.data;
       const data = response.data;

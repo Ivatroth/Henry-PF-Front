@@ -45,7 +45,7 @@ export const PUT_STATUS = "PUT_STATUS";
 export const postForm = (form) => {
   return async function (dispatch) {
     try {
-      var json = await axios.post("/user/create", form);
+      var json = await axios.post("https://proyecto-final-back-production-d376.up.railway.app//user/create", form);
       console.log(json);
       dispatch({
         type: USER_CREATE,
@@ -80,7 +80,7 @@ export const postForm = (form) => {
 
 export const googleLogin = () => async (dispatch) => {
   try {
-    const response = axios.get("/auth/google");
+    const response = axios.get("https://proyecto-final-back-production-d376.up.railway.app//auth/google");
     console.log(response);
   } catch (error) {
     console.log(error);
@@ -96,7 +96,7 @@ export const cleanUserError = () => {
 export const axiosProductsByCategory = (categoryName) => async (dispatch) => {
   try {
     const response = await axios.get(
-      `/categories/${categoryName}`
+      `https://proyecto-final-back-production-d376.up.railway.app//categories/${categoryName}`
     );
     const products = response.data;
     dispatch({
@@ -111,7 +111,7 @@ export const axiosProductsByCategory = (categoryName) => async (dispatch) => {
 export const getCategories = () => {
   return async function (dispatch) {
     try {
-      const response = await axios.get("/categories");
+      const response = await axios.get("https://proyecto-final-back-production-d376.up.railway.app//categories");
       return dispatch({
         type: GET_CATEGORIES,
         payload: response.data,
@@ -126,7 +126,7 @@ export const getCategories = () => {
 
 export const getDetail = (id) => {
   return async function (dispatch) {
-    const data = (await axios.get(`/product/${id}`)).data;
+    const data = (await axios.get(`https://proyecto-final-back-production-d376.up.railway.app//product/${id}`)).data;
     return dispatch({ type: PRODUCT_DETAIL, payload: data });
   };
 };
@@ -138,7 +138,7 @@ export const cleanDetail = () => {
 export const getProductByName = (name) => async (dispatch) => {
   try {
     const response = await axios.get(
-      `/product?name=${name}&size=6`
+      `https://proyecto-final-back-production-d376.up.railway.app//product?name=${name}&size=6`
     );
     dispatch({
       type: GET_PRODUCT_BY_NAME,
@@ -150,7 +150,7 @@ export const getProductByName = (name) => async (dispatch) => {
 export const prevPageHome = (value, page) => async (dispatch) => {
   try {
     const response = await axios.get(
-      `/categories/${value}?page=${page}`
+      `https://proyecto-final-back-production-d376.up.railway.app//categories/${value}?page=${page}`
     );
     const products = response.data;
     dispatch({
@@ -165,7 +165,7 @@ export const prevPageHome = (value, page) => async (dispatch) => {
 export const nextPageHome = (value, page) => async (dispatch) => {
   try {
     const response = await axios.get(
-      `/categories/${value}?page=${page}`
+      `https://proyecto-final-back-production-d376.up.railway.app//categories/${value}?page=${page}`
     );
     const products = response.data;
     dispatch({
@@ -181,7 +181,7 @@ export const postLogin = (payload) => {
   return async function (dispatch) {
     try {
       const response = await axios.post(
-        "/user/login",
+        "https://proyecto-final-back-production-d376.up.railway.app//user/login",
         payload
       );
       window.localStorage.setItem("token", JSON.stringify(response.data.token));
@@ -253,7 +253,7 @@ export const checkExpiration = () => {
 export const postCreate = (payload) => {
   return async function (dispatch) {
     try {
-      var json = await axios.post("/product", payload);
+      var json = await axios.post("https://proyecto-final-back-production-d376.up.railway.app//product", payload);
       window.localStorage.setItem("roll", "SELLER")
       return dispatch({
         type: POST_CREATE,
@@ -268,7 +268,7 @@ export const postCreate = (payload) => {
 export const getProductByCategory = (name) => async (dispatch) => {
   try {
     const response = await axios.get(
-      `/categories/${name}?page=0&size=6`
+      `https://proyecto-final-back-production-d376.up.railway.app//categories/${name}?page=0&size=6`
     );
     const products = response.data;
     dispatch({
@@ -289,7 +289,7 @@ export const cleanProducts = () => {
 export const filterByCategory = (name, min, max) => async (dispatch) => {
   try {
     const response = await axios.get(
-      `/product/pricerange/category/${name}?max=${max}&min=${min}`
+      `https://proyecto-final-back-production-d376.up.railway.app//product/pricerange/category/${name}?max=${max}&min=${min}`
     );
     dispatch({
       type: FILTER_PRODUCTS,
@@ -301,7 +301,7 @@ export const filterByCategory = (name, min, max) => async (dispatch) => {
 export const changePagesCategory = (name, value) => async (dispatch) => {
   try {
     const response = await axios.get(
-      `/categories/${name}?page=${value - 1}&size=6`
+      `https://proyecto-final-back-production-d376.up.railway.app//categories/${name}?page=${value - 1}&size=6`
     );
     dispatch({
       type: CHANGE_PAGES_PRODUCTS,
@@ -313,7 +313,7 @@ export const changePagesCategory = (name, value) => async (dispatch) => {
 export const changePagesName = (name, value) => async (dispatch) => {
   try {
     const response = await axios.get(
-      `/product/?name=${name}&page=${value - 1}`
+      `https://proyecto-final-back-production-d376.up.railway.app//product/?name=${name}&page=${value - 1}`
     );
     dispatch({
       type: CHANGE_PAGES_PRODUCTS,
@@ -327,7 +327,7 @@ export const changePagesName = (name, value) => async (dispatch) => {
 export const filterByName = (name, min, max) => async (dispatch) => {
   try {
     const response = await axios.get(
-      `/product/pricerange/name/${name}?max=${max}&min=${min}`
+      `https://proyecto-final-back-production-d376.up.railway.app//product/pricerange/name/${name}?max=${max}&min=${min}`
     );
     dispatch({
       type: FILTER_PRODUCTS,
@@ -342,7 +342,7 @@ export const changePageFilterNames =
   (name, min, max, value) => async (dispatch) => {
     try {
       const response = await axios.get(
-        `/product/pricerange/name/${name}?max=${max}&min=${min}&page=${
+        `https://proyecto-final-back-production-d376.up.railway.app//product/pricerange/name/${name}?max=${max}&min=${min}&page=${
           value - 1
         }`
       );
@@ -359,7 +359,7 @@ export const changePageFilterCategory =
   (name, min, max, value) => async (dispatch) => {
     try {
       const response = await axios.get(
-        `/product/pricerange/category/${name}?max=${max}&min=${min}&page=${
+        `https://proyecto-final-back-production-d376.up.railway.app//product/pricerange/category/${name}?max=${max}&min=${min}&page=${
           value - 1
         }`
       );
@@ -375,7 +375,7 @@ export const changePageFilterCategory =
 export const sortAlphabeticProducts = (name, value) => async (dispatch) => {
   try {
     const response = await axios.get(
-      `/product/order/name/${name}?orders=${value}`
+      `https://proyecto-final-back-production-d376.up.railway.app//product/order/name/${name}?orders=${value}`
     );
 
     dispatch({
@@ -389,7 +389,7 @@ export const changePageOrderName =
   (name, filter, value) => async (dispatch) => {
     try {
       const response = await axios.get(
-        `/product/order/name/${name}?orders=${filter}&page=${
+        `https://proyecto-final-back-production-d376.up.railway.app//product/order/name/${name}?orders=${filter}&page=${
           value - 1
         }`
       );
@@ -405,7 +405,7 @@ export const changePageOrderName =
 export const sortPriceProducts = (name, value) => async (dispatch) => {
   try {
     const response = await axios.get(
-      `/product/order/name/${name}?orders=${value}`
+      `https://proyecto-final-back-production-d376.up.railway.app//product/order/name/${name}?orders=${value}`
     );
 
     dispatch({
@@ -419,7 +419,7 @@ export const changePageSortPriceName =
   (name, filter, value) => async (dispatch) => {
     try {
       const response = await axios.get(
-        `/product/order/name/${name}?orders=${filter}&page=${
+        `https://proyecto-final-back-production-d376.up.railway.app//product/order/name/${name}?orders=${filter}&page=${
           value - 1
         }`
       );
@@ -435,7 +435,7 @@ export const changePageSortPriceName =
 export const sortPriceCategory = (name, value) => async (dispatch) => {
   try {
     const response = await axios.get(
-      `/categories/order/category/${name}?orders=${value}`
+      `https://proyecto-final-back-production-d376.up.railway.app//categories/order/category/${name}?orders=${value}`
     );
     dispatch({
       type: FILTER_PRODUCTS,
@@ -450,7 +450,7 @@ export const changePageSortPriceCategory =
   (name, filter, value) => async (dispatch) => {
     try {
       const response = await axios.get(
-        `/categories/order/category/${name}?orders=${filter}&page=${
+        `https://proyecto-final-back-production-d376.up.railway.app//categories/order/category/${name}?orders=${filter}&page=${
           value - 1
         }`
       );
@@ -466,7 +466,7 @@ export const changePageSortPriceCategory =
 export const orderByCategory = (name, value) => async (dispatch) => {
   try {
     const response = await axios.get(
-      `/categories/order/category/${name}?orders=${value}`
+      `https://proyecto-final-back-production-d376.up.railway.app//categories/order/category/${name}?orders=${value}`
     );
 
     dispatch({
@@ -482,7 +482,7 @@ export const changePageOrderCategory =
   (name, filter, value) => async (dispatch) => {
     try {
       const response = await axios.get(
-        `/categories/order/category/${name}?orders=${filter}&page=${
+        `https://proyecto-final-back-production-d376.up.railway.app//categories/order/category/${name}?orders=${filter}&page=${
           value - 1
         }`
       );
@@ -538,7 +538,7 @@ export const envioDetalle = (detalles) => {
   console.log(detalles);
   return async function (dispatch) {
     try {
-      var json = await axios.post("/order", detalles);
+      var json = await axios.post("https://proyecto-final-back-production-d376.up.railway.app//order", detalles);
       return {
         type: ENVIO_DETALLES,
         payload: detalles,
@@ -559,7 +559,7 @@ export const shoppinghistory = (payload) => {
   return async function (dispatch) {
     try {
       var json = await axios.get(
-        "/users/shoppinghistory",
+        "https://proyecto-final-back-production-d376.up.railway.app//users/shoppinghistory",
         {
           params: {
             email: payload,
@@ -580,7 +580,7 @@ export const getProductActive = (email) => {
   return async function (dispatch) {
     try {
       const response = await axios.get(
-        `/product/active/${email}`
+        `https://proyecto-final-back-production-d376.up.railway.app//product/active/${email}`
       );
       dispatch({ type: GET_PRODUCT_ACTIVE, payload: response.data });
     } catch (error) {
@@ -593,7 +593,7 @@ export const getProductInactive = (email) => {
   return async function (dispatch) {
     try {
       const response = await axios.get(
-        `/product/inactive/${email}`
+        `https://proyecto-final-back-production-d376.up.railway.app//product/inactive/${email}`
       );
       dispatch({ type: GET_PRODUCT_INACTIVE, payload: response.data });
     } catch (error) {
@@ -606,7 +606,7 @@ export const createAdmin = (form) => {
   return async function (dispatch) {
     try {
       const response = await axios.post(
-        "/admin/createadmin/",
+        "https://proyecto-final-back-production-d376.up.railway.app//admin/createadmin/",
         form
       );
       dispatch({ type: CREATE_ADMIN, payload: form });
@@ -635,7 +635,7 @@ export const createAdmin = (form) => {
 export const listUsers = () => {
   return async function (dispatch) {
     try {
-      const response = await axios.get("/admin/listusers");
+      const response = await axios.get("https://proyecto-final-back-production-d376.up.railway.app//admin/listusers");
       const data = response.data;
 
       dispatch({ type: LIST_USERS, payload: data });
@@ -649,7 +649,7 @@ export const listUsers = () => {
 //   return async function (dispatch) {
 //     try {
 //       const response = await axios.delete(
-//         "/admin/listusers/",
+//         "https://proyecto-final-back-production-d376.up.railway.app//admin/listusers/",
 //         ids
 //       );
 //     } catch (error) {
@@ -667,7 +667,7 @@ export const sendReviews = (payload) => {
   return async function (dispatch) {
     try {
       const response = await axios.post(
-        "/product/review",
+        "https://proyecto-final-back-production-d376.up.railway.app//product/review",
         payload
       );
       dispatch({ type: SEND_REVIEWS });
@@ -680,7 +680,7 @@ export const getVentas = (payload) => {
   
   return async function (dispatch) {
     try {
-      const response = await axios.get(`/users/saleshistory?email=${payload}`);
+      const response = await axios.get(`https://proyecto-final-back-production-d376.up.railway.app//users/saleshistory?email=${payload}`);
       dispatch({ 
         type: GET_VENTAS,
         payload: response.data,
@@ -694,7 +694,7 @@ export const getVentas = (payload) => {
 export const putStatus = ({id , status}) => {
   return async function (dispatch) {
     try {
-      const response = await axios.put(`/order/update?estado=${status}&id=${id}`)
+      const response = await axios.put(`https://proyecto-final-back-production-d376.up.railway.app//order/update?estado=${status}&id=${id}`)
       dispatch({ 
         type: PUT_STATUS,
       });

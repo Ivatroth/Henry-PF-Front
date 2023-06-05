@@ -28,7 +28,7 @@ export default function BarsChart() {
     try {
       const fetchData = async () => {
         const response = await axios.get(
-          " /order/orderdate"
+          " https://proyecto-final-back-production-d376.up.railway.app//order/orderdate"
         );
         const data = response.data;
         setChartData(data);
