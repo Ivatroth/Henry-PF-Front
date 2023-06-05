@@ -28,7 +28,7 @@ export default function BarsChart() {
     try {
       const fetchData = async () => {
         const response = await axios.get(
-          " https://tuki-server.onrender.com/order/orderdate"
+          " /order/orderdate"
         );
         const data = response.data;
         setChartData(data);

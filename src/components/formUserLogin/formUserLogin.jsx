@@ -89,7 +89,7 @@ export default function FormUserLogin() {
     }
   };
   const googleHandle = () => {
-    window.open("https://tuki-server.onrender.com/auth/google", "_self");
+    window.open("/auth/google", "_self");
 
     const urlParams = new URLSearchParams(window.location.search);
     const token = decodeURIComponent(urlParams.get("token"));

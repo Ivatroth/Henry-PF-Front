@@ -11,7 +11,7 @@ export default function UserList() {
 
   const fetchUsers = async () => {
     try {
-      const response = await axios.get("https://tuki-server.onrender.com/admin/listusers");
+      const response = await axios.get("/admin/listusers");
       const usersData = response.data;
       setUsers(usersData);
     } catch (error) {
@@ -27,7 +27,7 @@ export default function UserList() {
       }
 
       const response = await axios.delete(
-        "https://tuki-server.onrender.com/admin/listusers",
+        "/admin/listusers",
         {
           data: { ids: selectedUsers },
         }

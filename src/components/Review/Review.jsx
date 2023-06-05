@@ -15,7 +15,7 @@ export const Review = ({ id }) => {
     const axiosData = async () => {
       try {
         const response = await axios.get(
-          `https://tuki-server.onrender.com/product/review/${id}`
+          `/product/review/${id}`
         );
         setData(response.data);
       } catch (error) {

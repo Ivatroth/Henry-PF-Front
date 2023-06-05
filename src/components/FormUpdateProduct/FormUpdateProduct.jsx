@@ -79,7 +79,7 @@ export default function FormUpdateProduct({ value }) {
   const handleUpdateProduct = async () => {
     try {
       const response = await axios.put(
-        `https://tuki-server.onrender.com/product/${value.col0}`,
+        `/product/${value.col0}`,
         form
       );
     } catch (error) {

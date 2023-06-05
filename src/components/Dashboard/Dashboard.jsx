@@ -26,12 +26,12 @@ function Dashboard() {
   useEffect(() => {
     const axiosData = async () => {
       const response = await axios.get(
-        "https://tuki-server.onrender.com/admin/percentage"
+        "/admin/percentage"
       );
       const response2 = await axios.get(
-        "https://tuki-server.onrender.com/admin/deliveredProducts"
+        "/admin/deliveredProducts"
       );
-      const response3 = await axios.get("https://tuki-server.onrender.com/admin/sales");
+      const response3 = await axios.get("/admin/sales");
       const data3 = response3.data;
       const data2 = response2.data;
       const data = response.data;

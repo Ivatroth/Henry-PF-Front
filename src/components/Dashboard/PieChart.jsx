@@ -13,7 +13,7 @@ export default function PieChart() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://tuki-server.onrender.com/admin/piechart"
+          "/admin/piechart"
         );
         const data = response.data;
 
