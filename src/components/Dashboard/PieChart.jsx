@@ -13,7 +13,7 @@ export default function PieChart() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://proyecto-final-back-production-d376.up.railway.app/admin/piechart"
+          "https://henry-pf-back-production-c5bb.up.railway.app/admin/piechart"
         );
         const data = response.data;
 
