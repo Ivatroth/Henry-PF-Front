@@ -10,7 +10,7 @@ export default function PieChartNEW() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://proyecto-final-back-production-d376.up.railway.app//admin/piechart"
+          "https://proyecto-final-back-production-d376.up.railway.app/admin/piechart"
         );
         setData(response.data);
       } catch (error) {

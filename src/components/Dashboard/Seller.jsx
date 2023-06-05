@@ -9,7 +9,7 @@ export default function PieChartSeller() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://proyecto-final-back-production-d376.up.railway.app//admin/sellers");
+        const response = await axios.get("https://proyecto-final-back-production-d376.up.railway.app/admin/sellers");
         console.log(response.data);
 
         setData(response.data);

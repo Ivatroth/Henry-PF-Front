@@ -89,7 +89,7 @@ export default function FormUserLogin() {
     }
   };
   const googleHandle = () => {
-    window.open("https://proyecto-final-back-production-d376.up.railway.app//auth/google", "_self");
+    window.open("https://proyecto-final-back-production-d376.up.railway.app/auth/google", "_self");
 
     const urlParams = new URLSearchParams(window.location.search);
     const token = decodeURIComponent(urlParams.get("token"));

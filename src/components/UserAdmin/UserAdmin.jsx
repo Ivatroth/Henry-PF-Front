@@ -32,7 +32,7 @@ export default function UserAdmin() {
   const handleDeleteSelectedUsers = async () => {
     try {
       const response = await axios.delete(
-        "https://proyecto-final-back-production-d376.up.railway.app//admin/listusers?action=delete",
+        "https://proyecto-final-back-production-d376.up.railway.app/admin/listusers?action=delete",
         {
           data: { ids: ids },
         }
@@ -46,7 +46,7 @@ export default function UserAdmin() {
   const handleRestoreSelectedUsers = async () => {
     try {
       const response = await axios.delete(
-        "https://proyecto-final-back-production-d376.up.railway.app//admin/listusers?action=restore",
+        "https://proyecto-final-back-production-d376.up.railway.app/admin/listusers?action=restore",
         {
           data: { ids: ids },
         }

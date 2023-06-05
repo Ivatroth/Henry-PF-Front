@@ -32,7 +32,7 @@ export default function SearchBar({ view }) {
 
   useEffect(() => {
     async function getProducts() {
-      const response = await axios.get(`https://proyecto-final-back-production-d376.up.railway.app//product`);
+      const response = await axios.get(`https://proyecto-final-back-production-d376.up.railway.app/product`);
       setProductsSearch(response.data);
     }
     getProducts();
