@@ -1,0 +1,124 @@
+.divCompra{
+    margin: 1vw;
+    align-items: center;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border-bottom: 3px solid gray;
+}
+.divImg{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin-left: auto;
+}
+.overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 800px;
+  height: 800px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.divForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blurContainer {
+  backdrop-filter: blur(5px);
+}
+.rating {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  display: inline-block;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  color: gray;
+  font-size: 40px; /* Aumenta el tamaño de las estrellas */
+  cursor: pointer;
+  margin-right: 10px; /* Aumenta el espacio entre las estrellas */
+}
+
+.rating label:before {
+  content: "\2605";
+  padding: 5px;
+}
+
+.rating input:checked ~ label {
+  color: orange;
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+  color: orange;
+}
+  
+  .closebButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 10px;
+    border: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+  }
+  
+  .descriptionInput {
+    width: 20vw;
+    height: 10vw;
+    font-size: 16px;
+    color: black;
+    resize: vertical;
+    padding: 5px;
+    overflow: auto;
+    font-size: x-large;
+  }
+  
+  .submitButton {
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    transform: scale(1.05);
+    background-color: darkgray;
+    color: white;
+  }
+
+  .reviewsButton {
+    margin-right: 3vw;
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  }
+
+  .reviewsButton:hover {
+    transform: scale(1.05);
+    background-color: darkgray;
+    color: white;
+  }

@@ -1,0 +1,77 @@
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4em;
+}
+
+.section-all {
+  margin-top: 4em;
+  display: grid;
+  grid-template-columns: 60px repeat(3, 1fr) 60px;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin: 100px;
+}
+
+.text-container {
+    width: 100vw;
+    max-width: 60%;
+    font-family: "Kameron";
+    letter-spacing: 2px;
+}
+
+
+.hr {
+    width: 60%;
+    height: 1px;
+    background-color: #ddd;
+    margin-bottom: 2em;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container button {
+  height: 3em;
+  width: 3em;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3em;
+  background-color: #eee;
+  border: 1px solid #000;
+}
+
+.button-container button:hover {
+  background-color: #ddd;
+}
+.next {
+  grid-area: 1 / 5 / 2 / 6;
+}
+
+.container-sections {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@font-face {
+    font-family: "Kameron";
+    src: url('/public/fonts/Kameron-Regular.ttf');
+}

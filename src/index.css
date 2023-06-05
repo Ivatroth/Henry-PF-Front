@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.dark-theme {
+  background-color: #222324;
+  color: #f2f2f2;
+  border: #696969;
+  box-shadow: 7px 15px 13px -4px #ffffff1b;
+  transition: all 1s ease-in-out;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}

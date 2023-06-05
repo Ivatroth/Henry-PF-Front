@@ -1,0 +1,42 @@
+.error-container {
+    padding: 12px;
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    gap: 2em;
+}
+
+
+.error-message {
+    font-family: 'Kameron';
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.button-error {
+    padding: 6px 12px;
+    border: 2px solid #000;
+    border-radius: 1em;
+    font-family: 'Kameron';
+    background-color: #FF9F1C;
+    color: #fff;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    transition: background-color .2s;
+}
+
+.button-error:hover {
+    background-color: #d38518;
+}
+
+
+
+@font-face {
+    font-family: "Kameron";
+    src: url('/public/fonts/Kameron-Regular.ttf');
+  }

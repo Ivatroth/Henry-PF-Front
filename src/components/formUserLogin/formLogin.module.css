@@ -1,0 +1,221 @@
+.container,
+.containerDark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(243.18deg, #ff8300 0%, #ffd688 100%);
+}
+
+.containerDark {
+  background: linear-gradient(
+    243.18deg,
+    #09080c 0%,
+    rgba(23, 62, 104, 0.87) 100%
+  );
+}
+
+.div,
+.divDark {
+  position: relative;
+  background: #003049;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid black;
+  margin: 50px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  padding: 180px 100px;
+}
+
+.divDark {
+  background: #213743;
+  box-shadow: 0px 4px 4px rgba(125, 113, 113, 0.25);
+  border: 1px solid rgb(148, 136, 136);
+}
+
+.loginTitle {
+  font-family: "Judson";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin-bottom: 5%;
+  position: absolute;
+  top: 20%;
+  letter-spacing: 5px;
+}
+
+.noRegister {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.divForm {
+  width: 100%;
+}
+
+.inputMail {
+  font-family: "Judson";
+  box-sizing: border-box;
+  width: 373px;
+  height: 48px;
+  background: none;
+  position: relative;
+  border: 1px solid #0a9396;
+  border-radius: 5px;
+}
+
+.inputPassword {
+  font-family: "Judson";
+  margin-top: 20px;
+  box-sizing: border-box;
+  width: 373px;
+  height: 48px;
+  background: none;
+  position: relative;
+  border: 1px solid #0a9396;
+  border-radius: 5px;
+  margin-bottom: 5%;
+}
+
+
+.buttonHome {
+  background-color: #ff9f1c;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  border: 1px solid #000000;
+  border-radius: 14px;
+  transition: background 0.5s;
+  color: #ffffff;
+  margin-top: 15px;
+  padding: 6px 12px;
+}
+
+.buttonHome:hover {
+  background-color: #c97c10;
+}
+
+
+.divAlreadyRegister {
+  display: flex;
+  justify-content: center;
+}
+
+
+.link {
+  text-decoration: none;
+  color: #efe9e9;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.logoDark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  mix-blend-mode: lighten;
+  transition: all 1s ease-in-out;
+  margin-top: 8%;
+}
+
+.errors {
+  font-size: 15px;
+  text-align: center;
+  color: #da0303;
+  position: absolute;
+  top: 100%;
+}
+
+
+.googleButton {
+  position: absolute;
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  bottom: 15%;
+}
+
+.googleButton:hover {
+  background-color: #ddd;
+}
+
+
+.userNoRegister {
+  position: absolute;
+  bottom: 10px;
+  color: #ddd
+}
+
+.toRegister {
+  color: #ddd;
+}
+
+.inputUserContainer, .inputUserPasswordContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 16px;
+}
+
+.inputUsername, .inputUserActive, .inputPasswordLogin, .inputPasswordActiveLogin {
+  padding: 10px;
+  position: relative;
+  background-color: transparent;
+  border: 1px solid #0a9396;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.inputLabel {
+  position: absolute;
+  top: 15%;
+  left: 10px;
+  pointer-events: none;
+  transition: 0.3s;
+  color: #c9c9c9;
+}
+
+
+.inputPasswordLogin:focus + .inputLabel,
+.inputPasswordActiveLogin + .inputLabel,
+.inputUserActive + .inputLabel,
+.inputUsername:focus + .inputLabel {
+  background-color: transparent;
+  top: -10px;
+  left: 5px;
+  background-color: #003049;
+  padding: 0 5px;
+  font-size: 13px;
+  color: #c9c9c9c9;
+}
+
+.inputUsername:focus, .inputUserActive:focus, .inputPasswordLogin:focus, .inputPasswordActiveLogin:focus {
+  border: 1px solid #0a9396;
+  outline: none;
+}
+

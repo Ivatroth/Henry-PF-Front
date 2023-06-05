@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.allContainer {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail-all-container {
+  width: 100vw;
+  max-width: 80%;
+}
+
+.detail-container {
+  border: 2px solid #dddd;
+  padding: 1em;
+  margin-top: 4em;
+  border-radius: 4em;
+  display: grid;
+  grid-template-columns: 1.3fr 600px;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  position: relative;
+  top: 80px;
+  margin-bottom: 80px;
+}
+
+.image-container {
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 800px;
+  padding: 2em;
+}
+
+.detail-image {
+  max-width: 600px;
+  max-height: 600px;
+  border-radius: 100px;
+  min-width: 400px;
+}
+
+.hr-container {
+  height: 1px;
+  background-color: #eee;
+  width: 90%;
+}
+
+.feactures-container {
+  grid-area: 1 / 2 / 2 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid #ddd;
+  border-radius: 3em;
+  background-color: #eee;
+}
+
+.description-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.description-text p {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.description-text h2 {
+  color: #ff9f1c;
+}
+
+.name-container h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 2em;
+}
+
+.info-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.info-block div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.button-container-new {
+  border: none;
+  background-color: #ff9f1c;
+  padding: 8px 6px;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+
+.info-block h2 {
+  font-size: 1.4em;
+  border: 1px solid #ddd;
+  padding: 4px;
+  border-radius: 10px;
+  color: #ff9f1c;
+}
+
+.button-back {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.navigate-img {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navigate-img img {
+  width: 70px;
+  filter: opacity(0.7);
+  transition: filter 0.2s;
+}
+
+.navigate-img img:hover {
+  filter: opacity(1);
+}
+
+.h2-review {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 300px;
+  line-height: 133.4%;
+  flex: none;
+  order: 0;
+  margin: 2%;
+  flex-grow: 0;
+  transition: all 1s ease-in-out;
+}
+
+.h2-review h2 {
+  font-size: 40px;
+}

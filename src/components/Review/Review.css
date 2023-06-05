@@ -1,0 +1,42 @@
+.reviews-container,
+.reviews-container-dark {
+  width: 1300px;
+  margin: 1%;
+  height: 216px;
+  box-sizing: border-box;
+  border: 2px solid #dddd;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px -1px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  transition: all 1s ease-in-out;
+}
+
+.reviews-container-dark {
+  box-shadow: 0px 1px 3px rgb(255, 255, 255), 0px 1px 1px rgb(255, 255, 255);
+}
+
+.all-review {
+  margin: 2%;
+}
+
+.review-h6-dark,
+.review-h6 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.727);
+  transition: all 1s ease-in-out;
+}
+
+.review-h6-dark {
+  color: rgb(235, 225, 225);
+  transition: all 1s ease-in-out;
+}
+
+.reviews-container h2,
+.reviews-container-dark h2 {
+  text-align: center;
+  margin-top: 6%;
+}

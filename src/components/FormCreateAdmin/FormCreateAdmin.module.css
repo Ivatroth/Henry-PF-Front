@@ -1,0 +1,128 @@
+.Allform {
+  display: flex;
+}
+
+.FormAdmin,
+.FormAdminDark {
+  margin-top: 6.8%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(249, 250, 251);
+  color: black;
+  transition: all 1s ease-in-out;
+}
+
+.FormAdminDark {
+  background-color: #222324;
+  transition: all 1s ease-in-out;
+}
+
+.FormAdmin h1,
+.FormAdminDark h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 35px;
+  margin: auto;
+  color: black;
+  transition: all 1s ease-in-out;
+}
+.FormAdminDark h1 {
+  color: white;
+  transition: all 1s ease-in-out;
+}
+
+.formContainer,
+.formContainer:hover {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 45vw;
+  /* height: 70vh; */
+  padding: 40px;
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(145, 158, 171, 0.245) 0px 0px 2px 0px,
+    rgba(145, 158, 171, 0.249) 0px 12px 24px -4px;
+  margin-bottom: 2%;
+  gap: 0.8rem;
+  text-align: center;
+}
+
+.formContainer:hover {
+  border: 0.5px solid rgb(213, 205, 205);
+}
+
+.formContainer button {
+  width: 140px;
+  height: 40px;
+  border-radius: 8px;
+  margin-top: 8px;
+  border: none;
+}
+
+.formContainer button:hover {
+  background-color: rgb(220, 206, 206);
+  transition: all 0.5s ease-in-out;
+}
+
+.formContainer input {
+  display: flex;
+  background-color: rgb(248, 242, 242);
+  border: 1px solid rgb(220, 215, 215);
+  border-radius: 20px;
+  width: 17vw;
+  height: 6vh;
+  color: black;
+  font-size: 16px;
+}
+
+.errores {
+  width: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.formContainer span {
+  margin-right: 25px;
+  color: red;
+}
+
+.formContainer p {
+  margin-right: 25px;
+}
+
+.NameLast {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.NameLast input {
+  width: 15vw;
+}
+
+.emailNick {
+  display: flex;
+  justify-content: space-around;
+}
+
+.emailNick input {
+  width: 15vw;
+}
+
+.adreessDate {
+  display: flex;
+  justify-content: space-around;
+}
+
+.adreessDate input {
+  width: 15vw;
+}
+
+.right {
+  margin-right: 35px;
+}

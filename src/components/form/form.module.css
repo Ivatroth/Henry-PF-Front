@@ -1,0 +1,299 @@
+.allForm,
+.allFormDark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  background: radial-gradient(circle, rgba(221,221,221,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+
+.allFormDark {
+  background: linear-gradient(
+    243.18deg,
+    #09080c 0%,
+    rgba(23, 62, 104, 0.87) 100%
+  );
+}
+
+
+
+
+.div,
+.divDark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  position: relative;
+  max-height: 80vh;
+  background-color: #F8F2F2;
+}
+
+.divDark {
+  background: #213743;
+  box-shadow: 0px 4px 4px rgba(125, 113, 113, 0.25);
+  border: 1px solid rgb(148, 136, 136);
+}
+
+
+.welcomeDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 100%;
+  background-image: url('../../assets/Fondo Formulario.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.welcomeTitle {
+  text-align: center;
+  max-width: 80%;
+  font-size: 2.6em;
+  color: #fff;
+  font-family: "Poppins";
+}
+
+.divForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+
+
+
+.titleRegister {
+  font-family: 'Kameron';
+  font-size: 1.7em;
+  letter-spacing: 6px;
+  position: absolute;
+  top: -3%;
+}
+
+
+.inputEmailUserContainer, .firstNameInputContainer, .lastNameInputContainer, .usernameInputContainer, .birthDateInputContainer, .passwordInputContainer, .passwordRepitInputContainer, .countryInputContainer, .cityInputContainer, .streetInputContainer, .numberInputContainer, .fileInputContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 16px
+}
+
+
+
+.inputLabel {
+  position: absolute;
+  top: 15%;
+  left: 10px;
+  pointer-events: none;
+  transition: 0.3s;
+  color: #8a8a8a;
+}
+
+.inputLabelBirth, .countryLabel {
+  position: absolute;
+  top: -50%;
+  pointer-events: none;
+  font-size: 14px;
+}
+
+.inputFile {
+  opacity: 0;
+}
+
+.inputLabelFile{
+  position: absolute;
+  top: 0%;
+  font-size: 1em;
+  background-color: #F8F2F2;
+  border: 1px solid #a9a9a9;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.profilePicture {
+  max-width: 150px;
+}
+
+.inputLabelFile:hover {
+  background-color: #d4d0d0;
+}
+
+.selectCountry {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #a9a9a9;
+  padding: 6px ;
+  border-radius: 5px;
+}
+
+.optionsCountry {
+  background-color: #F8F2F2;
+  color: #000;
+  border: 1px solid #0a9396;
+  padding: 6px ;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  font-size: 1em;
+}
+
+.countryLabel {
+  top: -60%;
+  left: 0;
+  font-size: 1em;
+}
+
+
+
+.inputEmail, .inputName, .inputLastName, .inputUsername, .inputBirthDate, .inputPassword, .inputPasswordRepit, .inputCity, .inputStreet, .inputNumber {
+  padding: 10px;
+  position: relative;
+  background-color: #F8F2F2;
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+  color: #000;
+}
+
+
+.inputStreetActive:focus + .inputLabel,
+.inputStreetActive + .inputLabel,
+.inputStreet:focus + .inputLabel,
+.inputNumberActive:focus + .inputLabel,
+.inputNumberActive + .inputLabel,
+.inputNumber:focus + .inputLabel,
+.inputCityActive:focus + .inputLabel,
+.inputCity:focus + .inputLabel,
+.inputCityActive + .inputLabel,
+.inputCityActive:focus + .inputLabel,
+.inputPasswordRepitActive:focus + .inputLabel,
+.inputPasswordRepitActive + .inputLabel,
+.inputPasswordRepit:focus + .inputLabel,
+.inputPasswordActive:focus + .inputLabel,
+.inputPasswordActive + .inputLabel,
+.inputPassword:focus + .inputLabel,
+.inputUsernameActive:focus + .inputLabel,
+.inputUsernameActive + .inputLabel,
+.inputUsername:focus + .inputLabel,
+.inputLastNameActive + .inputLabel,
+.inputLastNameActive:focus + .inputLabel,
+.inputLastName:focus + .inputLabel,
+.inputName:focus + .inputLabel,
+.inputNameActive:focus + .inputLabel,
+.inputNameActive + .inputLabel,
+.inputEmailActive + .inputLabel,
+.inputEmailActive:focus + .inputLabel,
+.inputEmail:focus + .inputLabel {
+  background-color: transparent;
+  top: -10px;
+  left: 5px;
+  background-color: #F8F2F2;
+  padding: 0 5px;
+  font-size: 13px;
+  color: #a9a9a9;
+}
+
+
+.inputEmailActive, .inputNameActive, .inputLastNameActive, .inputUsernameActive, .inputPasswordActive, .inputPasswordRepitActive, .inputBirthDateActive, .inputCityActive, .inputStreetActive, .inputNumberActive {
+  padding: 10px;
+  position: relative;
+  background-color: transparent;
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+  color: #000;
+}
+
+.inputEmail:focus, .inputEmailActive:focus, .inputName:focus, .inputLastName:focus , .inputNameActive:focus, .inputLastNameActive:focus, .inputUsername:focus, .inputUsernameActive:focus, .inputBirthDate:focus, .inputBirthDateActive:focus, .inputPassword:focus, .inputPasswordActive:focus, .inputPasswordRepit:focus, .inputPasswordRepitActive:focus, .selectCountry:focus, .inputCity:focus, .inputCityActive:focus, .inputStreet:focus, .inputStreetActive:focus, .inputNumber:focus, .inputNumberActive:focus {
+  outline: none;
+}
+
+.nameGroup, .secondGroup, .thirdGroup, .fourthGroup, .fifthGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.secondGroup, .thirdGroup, .fifthGroup {
+  margin-top: 25px;
+}
+
+.fourthGroup {
+  margin-top: 30px;
+}
+
+.error {
+  color: #ed4337;
+  position: absolute;
+  top: 40px;
+  font-size: 13px;
+}
+
+
+.submitButton {
+  background-color: #ff8300;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #000;
+  color: #fff;
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: "Kameron";
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.submitButton:hover {
+  background-color: #dd7200;
+}
+
+
+.alReadyRegister {
+  position: absolute;
+  bottom: -5%;
+  color: #333;
+}
+
+.toLogin {
+  color: #000;
+}
+
+.pictureContainer {
+  position: relative;
+}
+
+.buttonDeletePicture {
+  background-color: #ed4337;
+  border: 1px solid #000;
+  border-radius: 3em;
+  padding: 3px 8px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+@font-face {
+  font-family: "Kameron";
+  src: url('../../../public/fonts/Kameron-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url('/fonts/Poppins-Medium.ttf');
+}

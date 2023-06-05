@@ -1,0 +1,55 @@
+.container-Sale {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  background-color: rgb(249, 250, 251);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container-Sale h3 {
+  font-family: Roboto, sans-serif;
+  font-size: 50px;
+}
+
+.container-h3 {
+  margin-top: 8%;
+}
+
+.btn-outline-success {
+  position: absolute;
+  right: 15%;
+  top: 0%;
+}
+
+.Product-active {
+  width: 85%;
+  /* width: 61.9vw;
+  height: 52vh; */
+  border-radius: 10px;
+  padding: 20px;
+  backdrop-filter: blur(900px);
+  -webkit-backdrop-filter: blur(15px);
+  margin: 2%;
+  /* margin-left: 50%;
+  margin-right: 50%; */
+}
+
+.Product-inactive {
+  width: 85%;
+  /* width: 82vw;
+  height: 52vh; */
+  border-radius: 10px;
+  padding: 20px;
+  backdrop-filter: blur(10000px);
+  -webkit-backdrop-filter: blur(15px);
+  margin: 2%;
+}
+
+.About p {
+  font-family: Work Sans;
+  font-size: 20px;
+  font-size: 25px;
+  color: #fff;
+}

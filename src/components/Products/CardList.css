@@ -1,0 +1,132 @@
+.container-cardList {
+    width: 1000px;
+    height: 340px;
+    display: flex;
+    gap: 3em;
+    border: 2px solid #eee;
+    border-radius: 3em;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    padding: 1em;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    transition: transform 0.4s;
+}
+
+.container-cardList:hover {
+    transform: scale(1.05);
+}
+
+.image-container-card {
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  max-width: 270px;
+  max-height: 270px;
+  border-radius: 3em;
+}
+
+.about-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+.title-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-container h2 {
+  text-align: center;
+}
+
+/* .title-card {
+  color: #000;
+  text-align: center;
+  margin: 2px;
+} */
+
+.rating-container {
+  position: absolute;
+  right: 2%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.rating-container p {
+  margin: 0;
+}
+
+.category-text {
+  color: #a9a9a9;
+  font-size: 16px;
+}
+.category-container {
+  margin-bottom: 1em;
+}
+
+.description-container {
+  margin-bottom: 2em;
+  max-height: 110px;
+}
+
+.description-container p {
+  text-align: center;
+}
+
+.stock {
+  color: #1caa00;
+  margin: 0;
+  font-size: 1.4em;
+}
+
+.bottom-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.button-list {
+  padding: 8px 32px;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+}
+
+.filters-applied {
+  padding: 4px;
+  border: 2px solid #888;
+  border-radius: 10px;
+  position: relative;
+  background-color: #ddd;
+}
+
+.button-filters-applied {
+  position: absolute;
+  border: none;
+  background-color: #ff0000;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1em;
+  left: 80%;
+  top: -10px;
+}
+
+.title-card {
+  color: #000;
+}

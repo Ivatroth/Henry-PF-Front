@@ -1,0 +1,142 @@
+.carousel {
+  overflow: hidden;
+  height: 45.3vh;
+  width: 100vw;
+  max-width: 100%;
+  margin-bottom: 4em;
+  position: relative;
+  top: 80px;
+}
+
+.carousel:hover button {
+  opacity: 1;
+}
+
+.carousel:hover {
+  overflow: hidden;
+  height: 45.3vh;
+  margin-bottom: 4em;
+  width: 100vw;
+  max-width: 100%;
+  position: relative;
+  top: 80px;
+}
+
+.carousel-image {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out;
+  width: 100%;
+  /* transform: translateX(100%); */
+}
+
+.carousel-image.active {
+  /* transform: translateX(0); */
+  opacity: 1;
+}
+
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(100%); /* Mueve la imagen actual hacia la derecha */
+  }
+  20% {
+    transform: translateX(0); /* Mantiene la imagen actual visible */
+  }
+  33% {
+    transform: translateX(0); /* Mantiene la imagen actual visible */
+  }
+  53% {
+    transform: translateX(
+      -100%
+    ); /* Mueve la imagen actual hacia la izquierda */
+  }
+  100% {
+    transform: translateX(
+      -100%
+    ); /* Mueve la imagen actual fuera del contenedor */
+  }
+}
+
+/* Configura la animación para el slideshow */
+/* .carousel {
+  animation: slideAnimation 5s infinite;
+} */
+
+.buton-carousel {
+  left: 0%;
+  top: 34%;
+  position: absolute;
+  height: 3.5em;
+  width: 1.8em;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0em 3em 3em 0em;
+  background-color: #eee;
+  border: 0.1px solid #000;
+  border-left: none;
+  opacity: 0;
+  z-index: 200;
+}
+.buton-carousel1 {
+  top: 34%;
+  right: 0%;
+  position: absolute;
+  height: 3.5em;
+  width: 1.8em;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3em 0em 0em 3em;
+  background-color: #eee;
+  border: 0.1px solid #000;
+  border-right: none;
+  opacity: 0;
+}
+
+/* @media screen and (max-width: 600px) {
+  .carousel {
+    overflow: hidden;
+    height: 15.3vh;
+    width: 100vw;
+    max-width: 100%;
+    margin-bottom: 4em;
+    position: relative;
+    top: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .carousel {
+    overflow: hidden;
+    height: 15.3vh;
+    width: 100vw;
+    max-width: 100%;
+    margin-bottom: 4em;
+    position: relative;
+    top: 80px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .carousel {
+    overflow: hidden;
+    height: 25.3vh;
+    width: 100vw;
+    max-width: 100%;
+    margin-bottom: 4em;
+    position: relative;
+    top: 80px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .carousel {
+    overflow: hidden;
+    height: 36.3vh;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 4em;
+    position: relative;
+    top: 80px;
+  }
+} */

@@ -1,0 +1,167 @@
+.container {
+    height: 100vh;
+    background: linear-gradient(243.18deg, #FF8300 0%, #FFD688 100%);
+    padding: 20px;
+}
+
+.div {
+    background: #003049;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid black;
+    width: 35vw;
+    height: 73vh;
+    margin: 50px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+    position: relative;
+}
+
+.noRegister {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.divForm {
+    width: 100%;
+}
+
+.inputMail {
+    font-family: 'Judson';
+    box-sizing: border-box;
+    width: 373px;
+    height: 48px;
+    background-color: #003049;
+    position: relative;
+    border: 1px solid #0A9396;
+    border-radius: 5px;
+
+}
+
+.inputPassword {
+    font-family: 'Judson';
+    margin-top: 20px;
+    box-sizing: border-box;
+    width: 373px;
+    height: 48px;
+    background-color: #003049;
+    position: relative;
+    border: 1px solid #0A9396;
+    border-radius: 5px;
+}
+
+.register {
+    position: absolute;
+    top: 50px;
+    text-align: center;
+    font-family: 'Judson';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 8px;
+    color: #FFFFFF;
+}
+
+.buttonHome {
+    background-color: #FF9F1C;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    border: 1px solid #000000;
+    border-radius: 14px;
+    margin-left: 1vw;
+    width: 180px;
+    height: 41px;
+    transition: 0.5s;
+    color: #FFFFFF;
+    margin: 0.5vw;
+}
+
+.buttonHome:hover {
+    background-color: #c97c10;
+}
+
+.buttonGuest {
+    background-color: #FF9F1C;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    border-radius: 4vw;
+    margin-left: 1vw;
+    width: 20vw;
+    height: 41px;
+    transition: background 0.5s;
+    color: #fff;
+    margin: 12px;
+    text-decoration: none;
+}
+
+.buttonGuest:hover {
+    background-color: #c97c10;
+}
+
+.divAlreadyRegister {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    color: #efe9e9;
+
+}
+
+.link {
+    text-decoration: none;
+    color: #efe9e9;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.userNameInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.errors {
+    font-size: 15px;
+    text-align: center;
+    color: #da0303;
+}
+
+
+.googleButton {
+    position: absolute;
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    bottom: 40px;
+}
+
+.googleButton:hover {
+    background-color: #ddd;
+}

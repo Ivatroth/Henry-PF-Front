@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.filter-buttons-container {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 14px;
+  position: relative;
+  top: 70px;
+}
+
+.filter-buttons-container .hr {
+  width: 60%;
+  height: 1px;
+  background-color: #eee;
+  margin-top: 3em;
+}
+
+.filter-buttons-container h3 {
+  font-family: "Kameron";
+  font-size: 1.6em;
+  letter-spacing: 2px;
+  margin-top: 0%;
+}
+
+.button-container {
+  display: flex;
+  gap: 14px;
+}
+
+.button-filter {
+  min-width: 5em;
+  height: 5.5em;
+  border: none;
+  background-color: #eeee;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 4px;
+}
+
+.filter-title {
+  font-family: system-ui;
+  font-size: 1.3em;
+  color: #000;
+  font-size: 1em;
+}
+
+.filter-title::first-letter {
+  text-transform: uppercase;
+}
+
+.button-filter img {
+  width: 40px;
+  mix-blend-mode: darken;
+}
+
+.button-filter:hover {
+  background-color: #ddd;
+}
+
+@font-face {
+  font-family: "Kameron";
+  src: url("/public/fonts/Kameron-Regular.ttf");
+}

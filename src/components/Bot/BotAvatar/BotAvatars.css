@@ -1,0 +1,30 @@
+.tuki_avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    background-color: #ff9f1c;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.react-chatbot-kit-chat-container {
+    position: fixed;
+    bottom: 45px;
+    right: 32px;
+    height: 500px;
+    z-index: 1000;
+}
+
+.react-chatbot-kit-chat-message-container {
+    background-color: beige;
+}
+
+.react-chatbot-kit-chat-input {
+    background-color: grey;
+}
+
+
