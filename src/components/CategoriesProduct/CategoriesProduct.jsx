@@ -181,7 +181,8 @@ export default function CategoriesProduct() {
         <div
           className={darkModes ? "filters-container-dark" : "filters-container"}
         >
-          <h4>Filtros</h4>
+          <h4 className="filter-title-panel">Filtros</h4>
+          <div className="hr"></div>
           {filters && (
             <h5 className="filters-applied">
               {filters}
@@ -231,7 +232,7 @@ export default function CategoriesProduct() {
             </div>
           </div>
           <div className="alphabetic-container">
-            <label>Orden Alfabetico:</label>
+            <label className="label">Orden Alfabetico:</label>
             <div>
               <button
                 onClick={handleOrder}
@@ -250,7 +251,7 @@ export default function CategoriesProduct() {
             </div>
           </div>
           <div className="price-order-container">
-            <label>Orden Precio:</label>
+            <label className="label">Orden Precio:</label>
             <div>
               <button
                 onClick={handleSortPrice}

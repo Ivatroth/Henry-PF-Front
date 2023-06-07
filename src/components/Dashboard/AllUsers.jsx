@@ -11,7 +11,7 @@ export default function UserList() {
 
   const fetchUsers = async () => {
     try {
-      const response = await axios.get("https://henry-pf-back-production-c5bb.up.railway.app/admin/listusers");
+      const response = await axios.get("https://henry-pf-back-production-c5bb.up.railway.app//admin/listusers");
       const usersData = response.data;
       setUsers(usersData);
     } catch (error) {
@@ -27,7 +27,7 @@ export default function UserList() {
       }
 
       const response = await axios.delete(
-        "https://henry-pf-back-production-c5bb.up.railway.app/admin/listusers",
+        "https://henry-pf-back-production-c5bb.up.railway.app//admin/listusers",
         {
           data: { ids: selectedUsers },
         }

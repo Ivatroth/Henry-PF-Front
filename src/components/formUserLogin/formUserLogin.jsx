@@ -89,7 +89,7 @@ export default function FormUserLogin() {
     }
   };
   const googleHandle = () => {
-    window.open("https://henry-pf-back-production-c5bb.up.railway.app/auth/google", "_self");
+    window.open("https://henry-pf-back-production-c5bb.up.railway.app//auth/google", "_self");
 
     const urlParams = new URLSearchParams(window.location.search);
     const token = decodeURIComponent(urlParams.get("token"));

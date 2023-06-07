@@ -198,7 +198,6 @@
 .inputEmailActive + .inputLabel,
 .inputEmailActive:focus + .inputLabel,
 .inputEmail:focus + .inputLabel {
-  background-color: transparent;
   top: -10px;
   left: 5px;
   background-color: #F8F2F2;

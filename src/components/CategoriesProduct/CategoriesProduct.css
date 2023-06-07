@@ -102,13 +102,20 @@
   background-color: #e9941d;
 }
 
+.filter-title-panel {
+  font-size: 1.5em;
+  font-family: "Kameron";
+  
+}
+
 .label {
-  font-size: px;
+  font-size: 1.2em;
+  font-family: "Kameron";
 }
 
 .buttons-filter {
   border: 1px solid #000;
-  background-color: #ff9f1c;
+  background-color: #ffb54e;
   margin: 6px;
   padding: 8px;
   border-radius: 2em;
@@ -127,4 +134,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+
+@font-face {
+  font-family: "Poppins";
+  src: url('/public/fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+  font-family: "Kameron";
+  src: url('/public/fonts/Kameron-Regular.ttf');
 }
