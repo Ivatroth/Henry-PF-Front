@@ -79,7 +79,7 @@ export default function FormUpdateProduct({ value }) {
   const handleUpdateProduct = async () => {
     try {
       const response = await axios.put(
-        `https://henry-pf-back-production-c5bb.up.railway.app//product/${value.col0}`,
+        `https://henry-pf-back-production-c5bb.up.railway.app/product/${value.col0}`,
         form
       );
     } catch (error) {

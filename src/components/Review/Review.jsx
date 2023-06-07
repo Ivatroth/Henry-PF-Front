@@ -15,7 +15,7 @@ export const Review = ({ id }) => {
     const axiosData = async () => {
       try {
         const response = await axios.get(
-          `https://henry-pf-back-production-c5bb.up.railway.app//product/review/${id}`
+          `https://henry-pf-back-production-c5bb.up.railway.app/product/review/${id}`
         );
         setData(response.data);
       } catch (error) {

@@ -28,7 +28,7 @@ export default function BarsChart() {
     try {
       const fetchData = async () => {
         const response = await axios.get(
-          " https://henry-pf-back-production-c5bb.up.railway.app//order/orderdate"
+          " https://henry-pf-back-production-c5bb.up.railway.app/order/orderdate"
         );
         const data = response.data;
         setChartData(data);
